@@ -4,7 +4,7 @@
  * main - Prints alphabetic
  *
  * Return:0 Always (Success)
- *i/
+*/
 int main(void)
 {
 	char c;
