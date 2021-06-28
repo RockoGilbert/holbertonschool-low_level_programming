@@ -1,10 +1,10 @@
-include < stdio.h >
+#include <stdio.h>
 
 /**
  * main - Prints alphabetic
  *
  * Return:0 Always (Success)
- */
+ *i/
 int main(void)
 {
 	char c;
