@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * i* print_alphabet - check the code for Holberton School students.
- *   * Description: Prints the alphabet with _putchar
- *    * Return: Always 0.
- *     */
+ * main - check the code for Holberton School students.
+ * Description: Prints the alphabet with _putchar
+ * Return: 0
+*/
+
 void print_alphabet(void)
 {
 	char c;
