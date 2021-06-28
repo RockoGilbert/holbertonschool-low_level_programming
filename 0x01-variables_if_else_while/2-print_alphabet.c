@@ -3,7 +3,7 @@ include < stdio.h >
 /**
  * main - Prints alphabetic
  *
- * Return: Always (Success)
+ * Return:0 Always (Success)
  */
 int main(void)
 {
