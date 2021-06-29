@@ -1,23 +1,29 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
+ * jack_bauer - display time 24h.
  * Return: 0
  */
-int main(void)
+void jack_bauer(void)
 {
-	char c;
-	int n;
-for (n = 48; n < 58; n++)
-{
-	putchar(n);
-			}
-for (c = 'a'; c <= 'f'; c++)
-{
-	putchar(c);
-			}
+	int i, j, k, y, m, t;
 
-	putchar('\n');
+	for (i = 0; i < 24 ; i++)
+	{
+		k = i / 10;
+		y = i % 10;
 
-return (0);
+	for (j = 0; j < 60; j++)
+															{
+		m = j / 10;
+		t = j % 10;
+		_putchar('0' + k);
+		_putchar('0' + y);
+		_putchar(':');
+		_putchar('0' + m);
+		_putchar('0' + t);
+		_putchar('\n');
+																															}
+	}
 }
+
