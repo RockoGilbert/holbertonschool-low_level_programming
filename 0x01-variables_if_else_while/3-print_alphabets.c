@@ -1,23 +1,26 @@
 #include <stdio.h>
+
 /**
-* main - Prints the alphabet in lower and upper case
-*Return:0 Always (Success)
-*/
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char c;
+	c = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
+	while (c <= 'z')
+{
 		putchar(c);
+		++c;
 	}
-
-	for (c = 'A'; c <= 'Z'; c++)
-	{
+	c = 'A';
+	while (c <= 'Z')
+{
 		putchar(c);
-	}
-
-	putchar ('\n')
+		++c;
+													}
+		putchar('\n');
 
 	return (0);
 }
