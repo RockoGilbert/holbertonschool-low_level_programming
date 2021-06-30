@@ -1,26 +1,20 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * _abs - check abs .
- * @x: integer.
- * Return: Always 0.
+ * main - Prints the numbers since 0 to 9
+ * Return: Always (Success)
  */
-
-int _abs(int x)
+int main(void)
 {
-	if (x > 0)
 
-	{
-	return (x);
-			}
+	int n;
 
-	else if (x < 0)
+	for (n = '0'; n <= '9'; n++)
+{
+	putchar(n);
+}
 
-	{
-	return (x = x * -1);
-			}
-
-	else
+	putchar('\n');
 
 	return (0);
 }
