@@ -1,21 +1,19 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * print_last_digit - display last digit.
- * @x:integer.
- * Return: Always 0.
- */
-int print_last_digit(int x)
+ * main - Prints the alphabet at reverse
+ * Return: Always (Success)
+*/
+int main(void)
 {
-	int y, e;
+	char c;
 
-	y = x % 10;
-
-	if (y < 0)
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		y = -y;
+		putchar(c);
 			}
-	e = '0' + y;
-	_putchar(e);
-	return (y);
+
+	putchar('\n');
+	return (0);
 }
+
