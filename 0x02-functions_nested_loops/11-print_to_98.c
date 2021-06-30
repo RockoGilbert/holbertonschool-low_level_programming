@@ -1,26 +1,47 @@
-#include<stdio.h>
+#include "holberton.h"
+#include <stdio.h>
+
 /**
- * main - count multiple.
- * Return:void
+ * print_to_98 - Prints all natural numbers from n to 98
+ * @n: The number to start printing from
+ * Return: Always 0.
  */
-int main(void)
+void print_to_98(int n)
 {
-	int a, b, s, x, y;
-	s = 0;
-	for (a = 0; a <= (1024  / 3); a++)
+	if (n <= 98)
 	{
-		y = a * 3;
-		s = s + y;
-				}
 
-	for (b = 0; b < (1024 / 5); b++)
+	for (; n <= 98; n++)
 	{
-		if (!(b % 3 == 0))
-		{
-			x = b * 5;														s = s + x;
-				}
+	
+	if (n == 98)
+	{
+		printf("%d", n);
+		printf("\n");
+													break;
+		}
+													else
+													{
+														printf("%d, ", n);
+																}
+					}
+	else
+	{
+	
+	for (; n >= 98; n--)
+	{
+		
+	if (n == 98)
+	{
+		printf("%d", n);
+			printf("\n");
+
+	break;
+																												}
+													else
+													{
+														printf("%d, ", n);
 			}
-	printf("%i\n", s);
-
-	return (0);
+																}
+				}
 }
