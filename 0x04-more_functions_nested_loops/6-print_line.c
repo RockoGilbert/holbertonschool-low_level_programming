@@ -1,25 +1,25 @@
 #include "holberton.h"
-
 /**
- * more_numbers - print 10 time from 0 to 14
- * Return:void
-*/
-void more_numbers(void)
+ * print_line - Draws a straight line according to parameter
+ * @n: The number of lines to draw
+ * Return: empty
+ */
+void print_line(int n)
 {
-	int i, j;
+	int x;
 
-	for (i = 0; i < 10; i++)
+	if (n <= 0)
 	{
-		for (j = 0; j <= 14; j++)
+		_putchar('\n');
+	}
+
+	else
+	{
+		for (x = 0; x < n; x++)
 		{
-			if (j >= 10)
-			{
-			_putchar('0' + j / 10);
-																		}
-			_putchar('0' +  j % 10);
-
-
+			_putchar(95);
 		}
-			_putchar('\n');
+
+		_putchar('\n');
 	}
 }
