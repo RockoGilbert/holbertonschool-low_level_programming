@@ -1,33 +1,24 @@
 #include "holberton.h"
 
 /**
- * rev_string - Reverses a string
- * @s: The string to be modified
- * Return: void
+ * more_numbers - print 10 time from 0 to 14
+ * Return:void
  */
-void rev_string(char *s)
+void more_numbers(void)
 {
-	int i, c, k;
+	int i, j;
 
-	char *a, aux;
-
-	a = s;
-
-	while (s[c] != '\0')
+	for (i = 0; i < 10; i++)
 	{
-		c++;
-	}
 
-	for (k = 1; k < c; k++)
-	{
-		a++;
-	}
-
-	for (i = 0; i < (c / 2); i++)
-	{
-		aux = s[i];
-		s[i] = *a;
-		*a = aux;
-		a--;
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+			{
+			_putchar('0' + j / 10);
+			}
+			_putchar('0' +  j % 10);
+		}
+			_putchar('\n');
 	}
 }
