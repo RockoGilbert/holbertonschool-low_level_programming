@@ -5,12 +5,11 @@
  * _strncpy - copy a string
  * @dest:char
  * @src:char
- * @nint:char
+ * @n:int
  * Return:char
  */
 
 char *_strncpy(char *dest, char *src, int n)
-
 {
 	int a = 0, b = 0;
 
