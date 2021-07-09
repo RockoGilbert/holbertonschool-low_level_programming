@@ -1,11 +1,10 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main - check the code for Holberton School Students
  * _strcat - concatenates two strings
  * @dest:char
  * @src:char
- * Return:ichar
+ * Return:char
  */
 char *_strcat(char *dest, char *src)
 {
