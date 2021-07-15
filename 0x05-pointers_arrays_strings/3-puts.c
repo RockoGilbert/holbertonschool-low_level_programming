@@ -1,6 +1,7 @@
 #include "holberton.h"
 
-/**
+/*
+ * _putchar - prints a string
  * _puts - print a string
  * @str:pointer char
  * return:void
