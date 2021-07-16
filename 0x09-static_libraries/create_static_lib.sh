@@ -1,3 +1,3 @@
 #!/bin/bash
-xargs -i gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -fno-pie *.c 
-ar -crs liball.a *.o
+gcc -Wall -c *.c
+ar -cvq liball.a *.o
