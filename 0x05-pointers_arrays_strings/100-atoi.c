@@ -15,15 +15,15 @@ int _atoi(char *n_str)
 			neg *= -1;
 
 			else if (*n_str >= '0' && *n_str <= '9')
-	        {
-	            /* adjust the 10s place, at 0 does nothing */
+		{
+		       	/* adjust the 10s place, at 0 does nothing */
 			rtrn *= 10;
-			
+
 			rtrn += (*n_str - '0');
 		}
-		        else if (rtrn > 0)
+			else if (rtrn > 0)
 			break;
-			
+
 			++n_str;
 		}
 
