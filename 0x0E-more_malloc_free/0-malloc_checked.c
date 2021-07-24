@@ -4,7 +4,7 @@
 
 /**
  * malloc_checked - Allocates memory
- * @b: the size to allocate 
+ * @b: the size to allocate
  *
  *
  */
@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 
 {
 	void *p;
-	
+
 	p = malloc(b);
 
 	if (p == NULL)
