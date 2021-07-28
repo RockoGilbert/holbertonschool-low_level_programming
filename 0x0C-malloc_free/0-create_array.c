@@ -3,25 +3,29 @@
 
 /**
  * create_array - create an array of a char
- * @size: size of the array
+ * @size: unsigned int
  * @c: the character to use in the array
- * Return: pointer to array or NULL if size = 0
+ * Return: char
  */
-char *create_array(unsigned int size, char c);
+
+ char *create_array(unsigned int size, char c);
 
 {
 	unsigned int i;
-	char *arr = malloc(sizeof(char) * size);
+	char *x;
 
-	if (size != 0 && arr != NULL)
-	{
-		for (i < 0; i < size; ++i)
-		{
-			arr[i] = chr;
-		}
-		return (arr);
-	}
-	else
+	if (size  == 0)
 		return (NULL);
 
+	x = malloc(sizeof(char));
+	if (x == NULL)
+		{
+		return (NULL);
+		}
+	for (i = 0; i < size; i++)
+	{
+		x[i] = c;
+	
+	}
+	return (x);
 }
