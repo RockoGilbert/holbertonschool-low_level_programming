@@ -2,19 +2,20 @@
 #include <stdio.h>
 /**
  * list_len - returns the number of elements in a linked list
- * @h: list to be printed
- * Return: number of elements
+ * @h: pointer
+ * Return: number of nodes in the list
  */
 
 size_t list_len(const list_t *h)
 {
-	list_t *tmp = (list_t *)h;
-	int count = 0;
+	size_t len = 0;
+	int i;
+	const list_t *c = h;
 
-	while (tmp != NULL)
+	for (i = 0; c; i++)
 	{
-			count++;
-				tmp = tmp->next;
+	c = c->next;
+	len++;	
 	}
-	return  (count);
+return (len);
 }
