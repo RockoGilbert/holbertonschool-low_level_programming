@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * binary_to_uint - converts a binary to unsigned int
+ * binary_to_uint - converts binary to unsigned int
  * @b: binary numbers to convert
  * Return: unsigned int
  */
