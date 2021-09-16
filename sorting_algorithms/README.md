@@ -1,4 +1,4 @@
-**Bold**General Requirements**Bold**
+**General Requirements**
 
 -At least four different sorting algorithms
 -What is the Big O notation, and how to evaluate the time complexity of an algorithm
