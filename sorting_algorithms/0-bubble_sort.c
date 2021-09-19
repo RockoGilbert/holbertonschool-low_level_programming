@@ -26,8 +26,6 @@ void bubble_sort(int *array, size_t size)
 				array[k + 1] = roc;
 				print_array(array, size);
 
-
-
 			}
 
 		}
