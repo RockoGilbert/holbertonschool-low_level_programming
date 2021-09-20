@@ -8,31 +8,30 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *swap_node, *next_swap;
+	listint_t *sort;
 
-	if (list == NULL || *list == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	swap_node = (*list)->next;
-	while (swap_node != NULL)
+	sort = (*list)->next;
+
+	while (sort != NULL)
 	{
-		next_swap = swap_node->next;
-		while (swap_node->prev != NULL && swap_node->prev->n > swap_node->n)
+		while (sort->prev != NULL && sort->n < sort->prev->n)
 		{
-			swap_node->prev->next = swap_node->next;
-			if (swap_node->next != NULL)
-				swap_node->next->prev = swap_node->prev;
-			swap_node->next = swap_node->prev;
-			swap_node->prev = swap_node->next->prev;
-			swap_node->next->prev = swap_node;
-			if (swap_node->prev == NULL)
-				*list = swap_node;
+			sort->prev->next = sort->next;
+			if (sort->next != NULL)
+				sort->next->prev = sort->prev;
+			sort->next = sort->prev;
+			sort->prev = sort->prev->prev;
+			sort->next->prev = sort;
+			if (sort->prev == NULL)
+				*list = sort;
 			else
-				swap_node->prev->next = swap_node;
+				sort->prev->next = sort;
 			print_list(*list);
 		}
-		swap_node = next_swap;
+		sort = sort->next;
 	}
-	
 }
 
 

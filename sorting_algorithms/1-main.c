@@ -13,7 +13,7 @@ listint_t *create_listint(const int *array, size_t size)
 	listint_t *list;
 	listint_t *node;
 	int *tmp;
-	
+
 	list = NULL;
 	while (size--)
 	{
@@ -25,7 +25,7 @@ listint_t *create_listint(const int *array, size_t size)
 		node->next = list;
 		node->prev = NULL;
 		list = node;
-		
+
 		if (list->next)
 			list->next->prev = list;
 	}

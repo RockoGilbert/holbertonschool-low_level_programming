@@ -6,7 +6,7 @@
  *
  **/
 
-void swap_nodes(listint_t *1)
+void swap_nodes(listint_t * 1)
 {
 	if (1->next)
 		1->next->prev = 1->prev;
