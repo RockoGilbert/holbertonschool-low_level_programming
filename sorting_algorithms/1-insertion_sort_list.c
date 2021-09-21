@@ -1,41 +1,33 @@
 #include "sort.h"
-
 /**
- * insertion_sort_list - sorts function
- * @list: list to be sorted
- *
+ * insertion_sort_list - Function that do an insertion sort in a Dlinked list
+ * @list: Doubly linked list
  */
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *sort;
+	listint_t *tmp;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	sort = (*list)->next;
+	tmp = (*list)->next;
 
-	while (sort != NULL)
+	while (tmp != NULL)
 	{
-		while (sort->prev != NULL && sort->n < sort->prev->n)
+		while (tmp->prev != NULL && tmp->n < tmp->prev->n)
 		{
-			sort->prev->next = sort->next;
-			if (sort->next != NULL)
-				sort->next->prev = sort->prev;
-			sort->next = sort->prev;
-			sort->prev = sort->prev->prev;
-			sort->next->prev = sort;
-			if (sort->prev == NULL)
-				*list = sort;
+			tmp->prev->next = tmp->next;
+			if (tmp->next != NULL)
+				tmp->next->prev = tmp->prev;
+			tmp->next = tmp->prev;
+			tmp->prev = tmp->prev->prev;
+			tmp->next->prev = tmp;
+			if (tmp->prev == NULL)
+				*list = tmp;
 			else
-				sort->prev->next = sort;
+				tmp->prev->next = tmp;
 			print_list(*list);
 		}
-		sort = sort->next;
+		tmp = tmp->next;
 	}
 }
-
-
-
-
-
-
