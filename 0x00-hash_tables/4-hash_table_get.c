@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
-  * *hash_table_get - define function
+  * *hash_table_get - defines function
   * @ht: hash table to lookup
   * @key: key to lookup in the hash table
   * Return: NULL on error, the value of the key on success
