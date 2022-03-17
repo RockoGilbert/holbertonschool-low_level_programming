@@ -1,1 +1,1 @@
-## 0x04. Searching Algorithms 0
+## 0x04. Searching Algorithms 
